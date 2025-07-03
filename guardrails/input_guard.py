@@ -9,7 +9,7 @@ BLOCKED_PHRASES = [
 ]
 
 def check_input_guardrails(user_input: str):
-    """Raises a tripwire if unsafe or banned input is detected."""
+    """Raise a tripwire if unsafe or banned input is detected."""
     for phrase in BLOCKED_PHRASES:
         if phrase in user_input.lower():
             raise InputGuardrailTripwireTriggered(
