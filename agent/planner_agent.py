@@ -8,7 +8,6 @@ from openai import AsyncOpenAI
 import os
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-# GEMINI_API_KEY = "AIzaSyAT658oSVqlxC9mp0xOxNOPCriLdQyzpes"
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY environment variable is not set.")
 
